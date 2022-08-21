@@ -1,18 +1,21 @@
+
+/*загальна інформація*/
+
 :root {
   --title-text-color: #212121;
   --main-text-color: #757575;
-  --accent-text-color: #2196f3;
   --white-text-color: #ffffff;
-  --secondary-background-color: #2f303a;
+  --accent-text-color: #2196f3;
   --primary-background-color: #f5f4fa;
   --button-background-color: #188ce8;
-}
+  --secondary-background-color: #2f303a;
+ }
 
 body {
   color: var(--title-text-color);
   background-color: var(--white-text-color);
-  letter-spacing: 0.03em;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
   font-style: normal;
   font-size: 14px;
 }
@@ -27,9 +30,28 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
-/*logo*/
+/*лого*/
 
 .main-logo {
   display: flex;
@@ -75,35 +97,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-/*contacts*/
-
-.contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: 0;
- }
-
-.contacts .item + .item {
-  margin-left: 50px;
-}
-
-.contacts a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--main-text-color);
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
-.contacts a:hover,
-.contacts a:focus {
-  color: var(--accent-text-color);
-}
-
-/*page-studio*/
-
-/*navigation*/
+/*навігація*/
 
 .main-nav {
   display: flex;
@@ -155,8 +149,35 @@ ul {
   text-decoration: none;
 }
 
+/*контакти*/
 
-/*hero*/
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0;
+ }
+
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
+.contacts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-text-color);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-text-color);
+}
+
+/*page-studio*/
+
+/*герой*/
 
 .hero-title {
   margin-left: auto;
@@ -176,6 +197,8 @@ ul {
   padding-top: 200px;
   padding-bottom: 280px;
 }
+
+/*кнопка-замовити послугу*/
 
 .btn {
   text-align: center;
@@ -201,15 +224,7 @@ ul {
   background: var(--button-background-color);
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*section*/
+/*наші особливості*/
 
 h1,
 h2,
@@ -217,7 +232,6 @@ h3,
 p {
   margin: 0;
 }
-
 
 .section {
   padding-top: 94px;
@@ -267,7 +281,7 @@ p {
   letter-spacing: 0.03em;
 }
 
-/*чим ми займаэмося*/
+/*чим ми займаємося*/
 .picture-image {
   display: flex;
   flex-wrap: wrap;
@@ -282,12 +296,19 @@ p {
   margin-right: 0;
 }
 
-/*team*/
+/*команда*/
 
 .section-team {
   background-color: var(--primary-background-color);
   margin: 0;
 }
+
+.list-team {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0;
+  padding-bottom: 0;
+ }
 
 .image {
   background-color: var(--white-text-color);
@@ -297,11 +318,6 @@ p {
 
 .image:nth-child(4n) {
   margin-right: 0;
-}
-
-.photo {
-  display: block;
-  max-width: 100%;
 }
 
 .name-title {
@@ -322,29 +338,58 @@ p {
   text-align: center;
 }
 
-.list-team {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 0;
-  padding-bottom: 0;
-  width: calc(100% / 4);
-}
-
 .all-team {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
 
-
-
-
-
-
+.photo {
+  display: block;
+  max-width: 100%;
+}
 
 /*page-portfolio*/
 
-/*name-services*/
+/*наші проекти: кнопки*/
+
+.button-list {
+  display: inline-block;
+  text-align: center;
+}
+.name-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; 
+  background-color: var(--primary-background-color);
+  color: var(--title-text-color);
+}
+
+.name-button:hover,
+.name-button:focus {
+  background-color: var(--accent-text-color);
+  color: var(--white-text-color);
+}
+
+.placement {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.trait-button {
+  display: flex;
+  margin-right: 8px;
+}
+.trait-button:last-child {
+  margin-right: 0px;
+}
+
+/*види послуг: картинки*/
 
 .service-name {
   color: var(--title-text-color);
@@ -361,36 +406,6 @@ p {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-
-/* buttons */
-
-.button-list {
-  display: inline-block;
-  text-align: center;
-}
-.name-button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: var(--primary-background-color);
-  color: var(--title-text-color);
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.name-button:hover,
-.name-button:focus {
-  background-color: var(--accent-text-color);
-  color: var(--white-text-color);
-}
-
-
-
-
-
-
 
 .flex-list {
   display: flex;
@@ -417,35 +432,13 @@ p {
   padding-bottom: 20px;
   padding-left: 24px;
   text-align: left;
+  border-left: 1px solid var(--solid-border-color);
+  border-right: 1px solid var(--solid-border-color);
+  border-bottom: 1px solid var(--solid-border-color);
 }
 
-.placement {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-}
 
-.trait-button {
-  display: flex;
-  margin-right: 8px;
-}
-.trait-button:last-child {
-  margin-right: 0px;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
+/*футер*/
 
 .footer {
   background-color: var(--secondary-background-color);
@@ -466,12 +459,4 @@ p {
   text-decoration: none;
 }
 
-.address-footer{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
-.logo-footer {
-  margin-bottom: 20px;
-}
