@@ -20,131 +20,156 @@
   </head>
   <body>
     <header>
-      <a href="/index.html" class="logo"
-        ><span class="accent"> Web</span>Studio</a
-      >
-
-      <nav>
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студія</a></li>
-          <li><a href="" class="link current">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="contacts">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      <div class="container">
+        <nav class="main-nav">
+          <a href="/index.html" class="logo main-logo"
+            ><span class="accent"> Web</span>Studio
+          </a>
+          <ul class="site-nav">
+            <li class="item"><a href="" class="link current">Студія</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
+          </ul>
+          <ul class="contacts">
+            <li class="item">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section>
         <div class="container">
-        <h1>Наші проекти</h1>
-        <ul class="button-list">
-          <li><button type="button" class="name-button">Усі</button></li>
-          <li><button type="button" class="name-button">Веб-сайти</button></li>
-          <li><button type="button" class="name-button">Додатки</button></li>
-          <li><button type="button" class="name-button">Дизайн</button></li>
-          <li><button type="button" class="name-button">Маркетинг</button></li>
+        <h1 class="visually hiden">Наші проекти</h1>
+        <ul class="button-list placement">
+          <li class="trait-button"><button type="button" class="name-button">Усі</button></li>
+          <li class="trait-button"><button type="button" class="name-button">Веб-сайти</button></li>
+          <li class="trait-button"><button type="button" class="name-button">Додатки</button></li>
+          <li class="trait-button"><button type="button" class="name-button">Дизайн</button></li>
+          <li class="trait-button"><button type="button" class="name-button">Маркетинг</button></li>
         </ul>
-        <ul>
-          <li>
+        </div>
+
+
+        <section class="container"> 
+          <ul class="flex-list">
+          <li class="flex-element">
             <img
               src="./images/three_persons.jpg"
               alt="три людини"
               width="370"
               height="294"
             />
+            <div class="flex-text">
             <h2 class="service-name">Технокряк</h2>
             <p class="service-text">Веб-сайт</p>
+          </div>
           </li>
-          <li>
+          <li class="flex-element">
             <img
               src="./images/basketball.jpg"
               alt="баскетболісти"
               width="370"
               height="294"
             />
+            <div class="flex-text">
             <h2 class="service-name" lang="en">
               Постер New Orlean vs Golden Star
             </h2>
             <p class="service-text">Дизайн</p>
+            </div>
           </li>
-          <li>
+          <li class="flex-element">
             <img
               src="./images/seafood.jpg"
               alt="рибка"
               width="370"
-              height="404"
+              height="294"
             />
+            <div class="flex-text">
             <h2 class="service-name" lang="en">Ресторан Seafood</h2>
             <p class="service-text">Додаток</p>
+            </div>
           </li>
-          <li>
+          <li class="flex-element">
             <img
               src="./images/headphones.jpg"
               alt="навушники"
               width="370"
               height="294"
             />
+            <div class="flex-text">
             <h2 class="service-name" lang="en">Проєкт Prime</h2>
             <p class="service-text">Маркетинг</p>
+            </div>
           </li>
-
-          <li>
+          <li class="flex-element">
             <img
               src="./images/boxes.jpg"
               alt="дві коробки"
               width="370"
               height="294"
             />
+            <div class="flex-text">
             <h2 class="service-name" lang="en">Проєкт Boxes</h2>
             <p class="service-text">Додаток</p>
+            </div>
           </li>
-
-          <li>
+          <li class="flex-element">
             <img
               src="./images/computer.jpg"
               alt="комп'ютер"
               width="370"
               height="294"
             />
+            <div class="flex-text">
             <h2 class="service-name" lang="en">Inspiration has no Borders</h2>
             <p class="service-text">Веб-сайт</p>
+            </div>
           </li>
-
-          <li>
+          <li class="flex-element">
             <img
               src="./images/magazine.jpg"
               alt="журнал"
               width="370"
               height="294"
             />
+            <div class="flex-text">
             <h2 class="service-name" lang="en">Видання Limited Edition</h2>
             <p class="service-text">Дизайн</p>
+            </div>
           </li>
-          <li>
+          <li class="flex-element">
             <img
               src="./images/label.jpg"
               alt="лейбл"
               width="370"
               height="294"
             />
+            <div class="flex-text">
             <h2 class="service-name" lang="en">Проєкт LAB</h2>
             <p class="service-text">Маркетинг</p>
+            </div>
           </li>
-          <li>
+          <li class="flex-element">
             <img
               src="./images/notebook.jpg"
               alt="ноутбук"
               width="370"
               height="294"
             />
+            <div class="flex-text">
             <h2 class="service-name" lang="en">Growing Business</h2>
             <p class="service-text">Додаток</p>
+            </div>
           </li>
         </ul>
-        </div>
       </section>
     </main>
 

@@ -20,23 +20,27 @@
   </head>
   <body>
     <header>
-      <div class="container container-nav">
-        <nav> 
-        <a href="/index.html" class="logo main-logo"
-          ><span class="accent"> Web</span>Studio</a
-        >
-    
-          <ul class="site-nav list">
+      <div class="container">
+        <nav class="main-nav">
+          <a href="/index.html" class="logo main-logo"
+            ><span class="accent"> Web</span>Studio
+          </a>
+          <ul class="site-nav">
             <li class="item"><a href="" class="link current">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
             <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
+          <ul class="contacts">
+            <li class="item">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
         </nav>
-
-        <ul class="contacts">
-          <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
       </div>
     </header>
 
@@ -49,7 +53,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Наші особливості</h2>
+          <h2 class="section-title visually hiden">Наші особливості</h2>
           <ul class="item-cnt">
             <li class="item-title">
               <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -58,25 +62,19 @@
                 формування позиції.
               </p>
             </li>
-          </ul>
-          <ul class="item-cnt">
             <li class="item-title">
               <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
-            </li class="item-title">
-          </ul>
-          <ul class="item-cnt">
+            </li>
             <li class="item-title">
               <h3 class="title">ПЛАНУВАННЯ</h3>
               <p class="text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-          </ul>
-          <ul class="item-cnt">
             <li class="item-title">
               <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="text">
@@ -90,7 +88,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="photo-image">
+          <ul class="picture-image">
             <li class="image-img">
               <img
                 src="./images/a-img-1.jpg"
@@ -123,51 +121,55 @@
           <h2 class="section-title">Наша команда</h2>
           <ul list-team>
             <li class="image">
-              <img class="photo"
+              <img
+                class="photo"
                 src="./images/ihor_demianenko-img.jpg"
                 alt="фото-Ігор Дем'яненко"
                 width="270"
                 height="260"
               />
-              <div class="all-team"> 
-              <h3 class="name-title">Ігор Дем'яненко</h3>
-              <p lang="en" class="team-title">Product Designer</p>
-            </div>
-          </li>
+              <div class="all-team">
+                <h3 class="name-title">Ігор Дем'яненко</h3>
+                <p lang="en" class="team-title">Product Designer</p>
+              </div>
+            </li>
             <li class="image">
-              <img class="photo"
+              <img
+                class="photo"
                 src="./images/olha_riepina-img.jpg"
                 alt="фото-Ольга Рєпіна"
                 width="270"
                 height="260"
               />
-              <div class="all-team"> 
-              <h3 class="name-title">Ольга Рєпіна</h3>
-              <p lang="en" class="team-title">Frontend Developer</p>
+              <div class="all-team">
+                <h3 class="name-title">Ольга Рєпіна</h3>
+                <p lang="en" class="team-title">Frontend Developer</p>
               </div>
             </li>
             <li class="image">
-              <img class="photo"
+              <img
+                class="photo"
                 src="./images/mykola_tarasov-img.jpg"
                 alt="фото-Микола Тарасов"
                 width="270"
                 height="260"
               />
-              <div class="all-team"> 
-              <h3 class="name-title">Микола Тарасов</h3>
-              <p lang="en" class="team-title">Marketing</p>
+              <div class="all-team">
+                <h3 class="name-title">Микола Тарасов</h3>
+                <p lang="en" class="team-title">Marketing</p>
               </div>
             </li>
             <li class="image">
-              <img class="photo"
+              <img
+                class="photo"
                 src="./images/mykhailo_yermakov-img.jpg"
                 alt="фото-Михайло Єрмаков"
                 width="270"
                 height="260"
               />
-              <div class="all-team"> 
-              <h3 class="name-title">Михайло Єрмаков</h3>
-              <p lang="en" class="team-title">UI Designer</p>
+              <div class="all-team">
+                <h3 class="name-title">Михайло Єрмаков</h3>
+                <p lang="en" class="team-title">UI Designer</p>
               </div>
             </li>
           </ul>
@@ -176,11 +178,10 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <a href="/index.html" class="logo-lg"
+      <div class="container address-footer">
+        <a href="/index.html" class="logo-lg logo-footer"
           ><span class="accent"> Web</span>Studio</a
         >
-
         <address class="address">
           <ul>
             <li class="address-info">м.Київ, пр-т Лесі Українки,6</li>
