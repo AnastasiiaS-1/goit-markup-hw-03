@@ -306,8 +306,7 @@ p {
 .list-team {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 0;
-  padding-bottom: 0;
+  align-item: flex-start;
  }
 
 .image {
@@ -321,7 +320,6 @@ p {
 }
 
 .name-title {
-  margin-top: 30;
   margin-bottom: 10;
   color: var(--title-text-color);
   font-weight: 500;
@@ -413,7 +411,7 @@ p {
 }
 
 .flex-element {
-  width: 380px;
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -459,4 +457,14 @@ p {
   text-decoration: none;
 }
 
+.cnt-footer {
+  padding-top: 9px;
+}
 
+.adr-info {
+  padding-top: 20px;
+}
+
+.footer-logo {
+  padding-top: 60px;
+}
