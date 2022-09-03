@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -17,11 +16,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header>
-      <div class="container">
-        <nav class="main-nav">
+    <div class="container">
+      <header>
+          <nav class="main-nav">
           <a href="/index.html" class="logo main-logo"
             ><span class="accent"> Web</span>Studio
           </a>
@@ -41,11 +42,9 @@
             </li>
           </ul>
         </nav>
-      </div>
     </header>
     <main>
-      <section>
-        <div class="container">
+      <section class="section">
           <h1 class="visually-hidden">Наші проекти</h1>
           <ul class="button-list placement">
             <li class="trait-button">
@@ -64,8 +63,6 @@
               <button type="button" class="name-button">Маркетинг</button>
             </li>
           </ul>
-        </div>
-        <div class="container">
           <ul class="flex-list">
             <li class="flex-element">
               <img
@@ -180,20 +177,15 @@
               </div>
             </li>
           </ul>
-        </div>
       </section>
     </main>
-
     <footer class="footer">
-      <div class="container">
         <a href="/index.html" class="logo-lg"
           ><span class="accent"> Web</span>Studio
         </a>
         <address class="address">
           <ul class="footer-address">
-            <li class="address-info adr-info">
-              м. Київ, пр-т Лесі Українки, 26
-            </li>
+            <li class="address-info">м. Київ, пр-т Лесі Українки, 26</li>
             <li class="contacts cnt-footer">
               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -202,7 +194,7 @@
             </li>
           </ul>
         </address>
-      </div>
-    </footer>
+        </footer>
+     </div>
   </body>
 </html>
